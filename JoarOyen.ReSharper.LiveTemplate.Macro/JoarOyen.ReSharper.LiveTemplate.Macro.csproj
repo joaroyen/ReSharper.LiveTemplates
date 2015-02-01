@@ -128,7 +128,15 @@
     <Compile Include="..\AssemblyInfo.Shared.cs">
       <Link>Properties\AssemblyInfo.Shared.cs</Link>
     </Compile>
+    <Compile Include="CapitalizedWordsIdentifierMacro.cs" />
+    <Compile Include="CapitalizedWordsIdentifierMacroImpl.cs" />
+    <Compile Include="DomainAndUsernameMacro.cs" />
+    <Compile Include="DomainAndUsernameMacroImpl.cs" />
+    <Compile Include="IdentifierBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickParameterlessMacro.cs" />
+    <Compile Include="ValidIdentifierMacro.cs" />
+    <Compile Include="ValidIdentifierMacroImpl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
