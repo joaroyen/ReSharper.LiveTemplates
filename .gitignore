@@ -1,4 +1,5 @@
 *.GhostDoc.xml
+*.nupkgs
 
 packages/
 ReSharper*Extensions*
