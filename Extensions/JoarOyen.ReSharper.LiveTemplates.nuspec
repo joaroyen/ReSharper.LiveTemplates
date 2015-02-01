@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>JoarOyen.ReSharper.LiveTemplates</id>
+    <version>1.0.0.0</version>
+    <title>Joar Øyen's Live Template Macros for ReSharper</title>
+    <authors>Joar Øyen</authors>
+    <owners>Joar Øyen</owners>
+    <licenseUrl>https://github.com/joaroyen/ReSharper.LiveTemplates/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/joaroyen/ReSharper.LiveTemplates</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Live Templates Macros for writing test methods</description>
+    <releaseNotes>Support for ReSharper 9.0 and ReSharper platform Wave01</releaseNotes>
+    <copyright>Copyright © 2015 Joar Øyen</copyright>
+    <language>en-US</language>
+    <tags>Macro, Testing</tags>
+    <dependencies>
+      <dependency id="Wave" version="[1.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\JoarOyen.ReSharper.LiveTemplate.Macro\bin\Release\JoarOyen.ReSharper.LiveTemplate.Macro.dll" target="dotFiles\" />
+    <file src="templates.dotSettings" target="dotFiles\Extensions\JoarOyen.ReSharper.LiveTemplates.Example\settings\" />
+  </files>
+</package>

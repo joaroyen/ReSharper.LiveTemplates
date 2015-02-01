@@ -137,6 +137,7 @@
     <Compile Include="QuickParameterlessMacro.cs" />
     <Compile Include="ValidIdentifierMacro.cs" />
     <Compile Include="ValidIdentifierMacroImpl.cs" />
+    <Compile Include="ZoneMarker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

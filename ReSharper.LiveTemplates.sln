@@ -12,11 +12,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		AssemblyInfo.Shared.cs = AssemblyInfo.Shared.cs
+		BuildExtensions.ps1 = BuildExtensions.ps1
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7246C501-FFA1-4E0B-AED2-4DE58C869493}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{A92955C8-5517-4386-9B72-9710750C2259}"
+	ProjectSection(SolutionItems) = preProject
+		Extensions\JoarOyen.ReSharper.LiveTemplates.nuspec = Extensions\JoarOyen.ReSharper.LiveTemplates.nuspec
+		Extensions\templates.dotSettings = Extensions\templates.dotSettings
 	EndProjectSection
 EndProject
 Global
