@@ -4,7 +4,7 @@ ReSharper Live Templates Macros
 Important
 ---------
 
-This is an update to support ReSharper 9.0 of my previous [ReSharperExtensions](https://github.com/joaroyen/ReSharperExtensions) project for ReSharper 8.2 and earlier. Due to changes in distribution of ReSharper platform, I've created a new and simpler project going forward. The name of the macros are the same, and your current templates should work.
+This is an update to support ReSharper 9.1 of my previous [ReSharperExtensions](https://github.com/joaroyen/ReSharperExtensions) project for ReSharper 8.2 and earlier. Due to changes in distribution of ReSharper platform, I've created a new and simpler project going forward. The name of the macros are the same, and your current templates should work.
 
 What this project contains
 --------------------------
@@ -35,6 +35,7 @@ Installation instructions
 Remarks
 -------
 
-* Master is updated to support ReSharper 9.0, and requires .NET 4.0 or newer. The macros can therefore only be used in VS2010, VS2012 and VS2013.
+* Master is updated to support ReSharper 9.1, and requires .NET 4.0 or newer. The macros can therefore only be used in VS2010, VS2012 and VS2013.
+* Support for ReSharper 9.0 is available from the branch Wave01
 * There is currently an issue enabling NCrunch on a project referenicing ReSharper SDK
 * The test project is using NUnit from ReSharper SDK, but uses NuGet for NSubstitute.
