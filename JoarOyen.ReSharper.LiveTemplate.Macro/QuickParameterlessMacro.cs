@@ -11,12 +11,13 @@ namespace JoarOyen.ReSharper.LiveTemplate.Macro
 
         public override string EvaluateQuickResult(IHotspotContext context)
         {
-            var q = 
+            var hotspotToEvaluate =
                 from hotspot in context.HotspotSession.Hotspots
-                where ShouldHandle(hotspot)
+                from rangeMarker in hotspot.RangeMarkers
+                where rangeMarker.DocumentRange == context.ExpressionRange
                 select QuickEvaluate(HotspotValue(hotspot));
             
-            return q.FirstOrDefault();
+            return hotspotToEvaluate.FirstOrDefault();
         }
 
         public override bool HandleExpansion(IHotspotContext context)
@@ -29,32 +30,7 @@ namespace JoarOyen.ReSharper.LiveTemplate.Macro
         public void HotspotSessionHotspotUpdated(object sender, EventArgs e)
         {
             var hotspotSession = (IHotspotSession)sender;
-
-            foreach (var hotspot in hotspotSession.Hotspots)
-            {
-                if (ShouldHandle(hotspot))
-                {
-                    hotspot.QuickEvaluate();
-                }
-            }
-        }
-
-        private bool ShouldHandle(Hotspot hotspot)
-        {
-            if (hotspot == null) return false;
-
-            var macroCallExpressionNew = hotspot.Expression as MacroCallExpressionNew;
-            if (macroCallExpressionNew == null) return false;
-
-            return ThisImplementationsMacroDefinition().IsInstanceOfType(macroCallExpressionNew.Definition);
-        }
-
-        private Type ThisImplementationsMacroDefinition()
-        {
-            var macroDefinitionTypeOfCurrentImplementation = (MacroImplementationAttribute)GetType().GetCustomAttributes(
-                typeof (MacroImplementationAttribute), true).First();
-
-            return macroDefinitionTypeOfCurrentImplementation.Definition;
+            hotspotSession.CurrentHotspot.QuickEvaluate();
         }
 
         private string HotspotValue(Hotspot hotspot)

@@ -50,12 +50,6 @@ namespace JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit
             Assert.That(_quickParamterlessMacro.HandleExpansion(_context), Is.False);
         }
 
-        [TestCase(Category = "Unit")]
-        public void Test()
-        {
-            _quickParamterlessMacro.HotspotSessionHotspotUpdated(_hotspotSession, null);
-        }
-
         private IHotspotContext CreateFakeHotspotContext(IHotspotSession hotspotSession)
         {
             var context = Substitute.For<IHotspotContext>();
