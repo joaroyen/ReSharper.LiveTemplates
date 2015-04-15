@@ -19,7 +19,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\JoarOyen.ReSharper.LiveTemplate.Macro\bin\Release\JoarOyen.ReSharper.LiveTemplate.Macro.dll" target="dotFiles\" />
+    <file src="..\JoarOyen.ReSharper.LiveTemplate.Macro\bin\$configuration$\JoarOyen.ReSharper.LiveTemplate.Macro.dll" target="dotFiles\" />
     <file src="templates.dotSettings" target="dotFiles\Extensions\JoarOyen.ReSharper.LiveTemplates.Example\settings\" />
   </files>
 </package>
