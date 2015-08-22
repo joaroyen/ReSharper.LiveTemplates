@@ -20,6 +20,6 @@
   </metadata>
   <files>
     <file src="..\JoarOyen.ReSharper.LiveTemplate.Macro\bin\$configuration$\JoarOyen.ReSharper.LiveTemplate.Macro.dll" target="DotFiles\" />
-    <file src="templates.dotSettings" target="dotFiles\Extensions\JoarOyen.ReSharper.LiveTemplates.Example\settings\" />
+    <file src="templates.dotSettings" target="DotFiles\Extensions\JoarOyen.ReSharper.LiveTemplates\settings\" />
   </files>
 </package>
