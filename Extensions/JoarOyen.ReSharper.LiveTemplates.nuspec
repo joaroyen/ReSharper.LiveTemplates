@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>JoarOyen.ReSharper.LiveTemplates</id>
-    <version>3.0.0.0</version>
+    <version>4.0.0.0</version>
     <title>Joar Øyen's Live Template Macros for ReSharper</title>
     <authors>Joar Øyen</authors>
     <owners>Joar Øyen</owners>
@@ -10,12 +10,12 @@
     <projectUrl>https://github.com/joaroyen/ReSharper.LiveTemplates</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Live Templates Macros for writing test methods</description>
-    <releaseNotes>Support for ReSharper 9.2 and ReSharper platform Wave03</releaseNotes>
+    <releaseNotes>Support for ReSharper 10.0 and ReSharper platform Wave04</releaseNotes>
     <copyright>Copyright © 2015 Joar Øyen</copyright>
     <language>en-US</language>
     <tags>Macro, Testing</tags>
     <dependencies>
-      <dependency id="Wave" version="[3.0]" />
+      <dependency id="Wave" version="[4.0]" />
     </dependencies>
   </metadata>
   <files>
