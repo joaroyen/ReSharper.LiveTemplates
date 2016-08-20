@@ -24,7 +24,7 @@ namespace JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit
         [TestCase(Category="Unit")]
         public void Has_no_lookup_items()
         {
-            Assert.That(_quickParamterlessMacro.GetLookupItems(null), Is.Null);
+            Assert.That(_quickParamterlessMacro.GetLookupItems(_context), Is.Null);
         }
 
         [TestCase(Category = "Unit")]
@@ -59,20 +59,13 @@ namespace JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit
 
         private IHotspotSession CreateFakeHotspotSession()
         {
-            var hotspotSession = Substitute.For<IHotspotSession>();
-            //var templateField = new TemplateField("", new MacroCallExpressionNew(_quickParamterlessMacro), 0);
-            //var hotspot = new Hotspot(new HotspotInfo(templateField), hotspotSession);
-            //var rangeMarger = Substitute.For<IRangeMarker>();
-            //hotspot.RangeMarkers.Add(rangeMarger);
-
-            var hotspots = new List<Hotspot>
+            var session = Substitute.For<IHotspotSession>();
+            session.Hotspots.Returns(new List<Hotspot>
             {
-                new Hotspot(new HotspotInfo(new TemplateField("", 0)), hotspotSession)
-                //, 
-                //hotspot
-            };
-            hotspotSession.Hotspots.Returns(hotspots);
-            return hotspotSession;
+                new Hotspot(new HotspotInfo(new TemplateField("", 0)), null)
+            });
+
+            return session;
         }
     }
 }

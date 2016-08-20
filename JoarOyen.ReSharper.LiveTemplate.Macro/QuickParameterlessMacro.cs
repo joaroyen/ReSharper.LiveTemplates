@@ -27,7 +27,7 @@ namespace JoarOyen.ReSharper.LiveTemplate.Macro
             return false;
         }
 
-        public void HotspotSessionHotspotUpdated(object sender, EventArgs e)
+        private void HotspotSessionHotspotUpdated(object sender, EventArgs e)
         {
             var hotspotSession = (IHotspotSession)sender;
             hotspotSession.CurrentHotspot.QuickEvaluate();
