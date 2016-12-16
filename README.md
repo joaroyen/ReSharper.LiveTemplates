@@ -35,6 +35,7 @@ Installation instructions
 Remarks
 -------
 
-* Master is updated to support ReSharper 2016.3. 
+* Master is updated to support ReSharper 2016.3.
+* ReSharper 2016.3 require .NET Framework 4.5.2 and this extension is updated accordingly. 
 * Support for previous versions are available from separate branches for the respective ReSharper platform wave.
 * The test project is using NUnit from ReSharper SDK, but uses NuGet for NSubstitute.
