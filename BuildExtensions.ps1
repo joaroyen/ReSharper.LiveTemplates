@@ -1,6 +1,6 @@
 param([string]$configuration = 'Release')
 
-msbuild .\ReSharper.LiveTemplates.sln /p:Configuration=$configuration
+. "$env:DevEnvDir\..\..\MSBuild\Current\Bin\MSBuild.exe" .\ReSharper.LiveTemplates.sln /p:Configuration=$configuration
 
 pushd Extensions
 
