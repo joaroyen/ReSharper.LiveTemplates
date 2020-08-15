@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharper.LiveTemplate.Macro", "JoarOyen.ReSharper.LiveTemplate.Macro\JoarOyen.ReSharper.LiveTemplate.Macro.csproj", "{B6F56105-BAFB-44EB-A2E0-48D22D1FFC6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JoarOyen.ReSharper.LiveTemplate.Macro", "JoarOyen.ReSharper.LiveTemplate.Macro\JoarOyen.ReSharper.LiveTemplate.Macro.csproj", "{B6F56105-BAFB-44EB-A2E0-48D22D1FFC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit", "JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit\JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit.csproj", "{C12AC570-7E5F-49DC-8884-C70C1F508344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit", "JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit\JoarOyen.ReSharper.LiveTemplate.Macro.Test.Unit.csproj", "{C12AC570-7E5F-49DC-8884-C70C1F508344}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30566C63-867A-4DA2-9E55-C8EB958360F3}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		AssemblyInfo.Shared.cs = AssemblyInfo.Shared.cs
 		BuildExtensions.ps1 = BuildExtensions.ps1
+		Directory.Build.props = Directory.Build.props
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
@@ -40,5 +40,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {082C37E1-E38F-41C8-ABC7-8CBE857F072A}
 	EndGlobalSection
 EndGlobal
