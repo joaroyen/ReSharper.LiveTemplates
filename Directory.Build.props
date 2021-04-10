@@ -2,8 +2,8 @@
   <PropertyGroup>
     <Product>JoarOyen.ReSharper.LiveTemplates</Product>
     <Company>Joar Øyen</Company>
-    <Copyright>Copyright © 2020 Joar Øyen</Copyright>
-    <Version>2020.3.0.0</Version>
+    <Copyright>Copyright © 2021 Joar Øyen</Copyright>
+    <Version>2021.1.0.0</Version>
     <Description>Macros for ReSharper Platform Live Templates</Description>
   </PropertyGroup>
 </Project>
