@@ -1,10 +1,13 @@
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
+using JoarOyen.ReSharper.LiveTemplate.Macro.Properties;
 
 namespace JoarOyen.ReSharper.LiveTemplate.Macro
 {
-    [MacroDefinition("JoarOyenLiveTemplateMacros.CapitalizedWordsIdentifier",
-        ShortDescription = "Ensures that given variable is a valid C# identifier and capitalizes the first character of each word",
-        LongDescription = "Replaces invalid characters in a C# identifier with underscores and capitalizes the first character of each word")]
+    [MacroDefinition(
+        "JoarOyenLiveTemplateMacros.CapitalizedWordsIdentifier", 
+        ResourceType = typeof(Resources),
+        DescriptionResourceName = nameof(Resources.CapitalizedWordsIdentifierDescription),
+        LongDescriptionResourceName = nameof(Resources.CapitalizedWordsIdentifierLongDescription))]
     public class CapitalizedWordsIdentifierMacro : SimpleMacroDefinition
     {
     }

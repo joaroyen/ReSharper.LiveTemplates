@@ -4,7 +4,7 @@
 Important
 ---------
 
-This is an update to support ReSharper 2022.3 or later of my previous [ReSharperExtensions](https://github.com/joaroyen/ReSharperExtensions) project for ReSharper 8.2 and earlier. Due to changes in distribution of ReSharper platform, I've created a new and simpler project going forward. The name of the macros are the same, and your current templates should work.
+This is an update to support ReSharper 2023.2 or later of my previous [ReSharperExtensions](https://github.com/joaroyen/ReSharperExtensions) project for ReSharper 8.2 and earlier. Due to changes in distribution of ReSharper platform, I've created a new and simpler project going forward. The name of the macros are the same, and your current templates should work.
 
 What this project contains
 --------------------------
@@ -35,7 +35,7 @@ Installation instructions
 Remarks
 -------
 
-* Main is updated to support ReSharper 2022.3 or later. JetBrains have added plugin migration to ReSharper 2023.1 and updates to existing plugins are only required to support breaking API changes in ReSharper.
+* Main is updated to support ReSharper 2023.2 or later. JetBrains have added plugin migration to ReSharper 2023.2 and updates to existing plugins are only required to support breaking API changes in ReSharper.
 * Support .NET Framework 4.7.2. 
 * Support for previous versions are available from separate branches for the respective ReSharper platform wave.
 * The test project is using NUnit from ReSharper SDK, but uses NuGet for NSubstitute.
