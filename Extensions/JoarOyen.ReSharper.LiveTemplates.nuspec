@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>JoarOyen.ReSharper.LiveTemplates</id>
-    <version>2023.2.0</version>
+    <version>2025.3.0</version>
     <title>Joar Øyen's Live Template Macros for ReSharper</title>
     <authors>Joar Øyen</authors>
     <owners>Joar Øyen</owners>
@@ -10,17 +10,19 @@
     <projectUrl>https://github.com/joaroyen/ReSharper.LiveTemplates</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Live Templates Macros for writing test methods</description>
-    <releaseNotes>Support for ReSharper 2023.2</releaseNotes>
-    <copyright>Copyright © 2023 Joar Øyen</copyright>
+    <releaseNotes>Support for ReSharper 2025.3 and Visual Studio 2026</releaseNotes>
+    <copyright>Copyright © 2025 Joar Øyen</copyright>
+	<readme>README.md</readme>
     <language>en-US</language>
     <tags>Macro, Testing</tags>
     <dependencies>
-      <dependency id="Wave" version="[232.0]" />
+      <dependency id="Wave" version="[253.0]" />
     </dependencies>
   </metadata>
   <files>
     <file src="..\JoarOyen.ReSharper.LiveTemplate.Macro\bin\$configuration$\net472\JoarOyen.ReSharper.LiveTemplate.Macro.dll" target="DotFiles\" />
     <file src="templates.dotSettings" target="DotFiles\Extensions\JoarOyen.ReSharper.LiveTemplates\settings\" />
+	<file src="..\README.md" target="" />
     <file src="..\LICENSE.txt" target="" />
   </files>
 </package>
